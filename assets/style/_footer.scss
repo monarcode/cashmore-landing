@@ -1,0 +1,125 @@
+.footer {
+  position: relative;
+  color: #fff;
+
+  .container {
+    position: relative;
+  }
+
+  &__news {
+    min-height: 200px;
+    width: 100%;
+    background: var(--main);
+    position: relative;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 10;
+    border-radius: 20px;
+    padding: 5rem;
+
+    &__title {
+      text-align: center;
+      font-size: 3rem;
+      color: #fff;
+    }
+
+    &__desc {
+      text-align: center;
+      margin: 2rem auto;
+      color: rgba(255, 255, 255, 0.75);
+      width: 70%;
+      font-size: 1.4rem;
+    }
+  }
+
+  &__main {
+    background: #0e0d0d;
+    min-height: 500px;
+    z-index: 9;
+  }
+
+  &__input {
+    padding: 2.5rem;
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+
+    &::placeholder {
+      font-size: 1.3rem;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &__cta {
+      background: linear-gradient(117.77deg, #ffb280 0%, #ff6600 100%);
+      border-radius: 8px;
+      padding-inline: 3rem;
+      border: none;
+      margin: 2px 2px 2px 0;
+      color: #fff;
+      font-size: 1.3rem;
+    }
+
+    &__group {
+      display: flex;
+      width: 70%;
+      background: white;
+      margin-inline: auto;
+      border-radius: 1rem;
+      overflow: hidden;
+      margin-top: 5rem;
+    }
+  }
+
+  &__content {
+    padding-top: 150px;
+  }
+
+  &__logo {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__socials {
+    max-width: 200px;
+    margin: 3rem auto;
+
+    h3 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+  }
+
+  &__address {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  &__mail {
+    text-align: center;
+  }
+
+  &__contact {
+    text-align: center;
+    a {
+      color: #fff;
+      text-decoration: none;
+
+      &:hover {
+        color: var(--main);
+      }
+    }
+  }
+}

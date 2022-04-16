@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;700&display=swap");
+
+// general
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 130px;
+}
+
+body {
+  font-size: 1.6rem;
+  position: relative;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  background: #fff;
+  letter-spacing: 0.6px;
+  scroll-padding-top: 130px;
+}
+
+//.container {
+//  width: min(90%, 1300px);
+//  margin-inline: auto;
+//}
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+  @media (min-width: $sm) {
+    max-width: 540px;
+  }
+  @media (min-width: $md) {
+    max-width: 720px;
+  }
+  @media (min-width: $lg) {
+    max-width: 960px;
+  }
+  @media (min-width: $xl) {
+    max-width: 1240px;
+  }
+}

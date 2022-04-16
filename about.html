@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cashmore NG</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="/assets/style/main.css" />
+  </head>
+  <body>
+    <!--    navbar    -->
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar__wrapper">
+      <img src="/assets/img/logo-colored.png" class="navbar__logo" alt="" />
+      <div class="navbar__desktop">
+        <div class="navbar__links">
+          <a class="navbar__link" href="/">Home</a>
+          <a class="navbar__link" href="/about.html">About</a>
+          <a class="navbar__link" href="/agent.html">Agent</a>
+          <a class="navbar__link" href="/family.html">Family member</a>
+          <a class="navbar__link" href="/contact.html">Contact</a>
+          <a class="navbar__link" href="/">API</a>
+        </div>
+        <div class="navbar__buttons">
+          <button class="navbar__button">Login</button>
+          <button class="navbar__button">Create account</button>
+        </div>
+      </div>
+
+      <div class="navbar__mobile">
+        <div class="navbar__links">
+          <a class="navbar__link" href="/">Home</a>
+          <a class="navbar__link" href="/about.html">About</a>
+          <a class="navbar__link" href="/agent.html">Agent</a>
+          <a class="navbar__link" href="/family.html">Family member</a>
+          <a class="navbar__link" href="/contact.html">Contact</a>
+          <a class="navbar__link" href="/">API</a>
+        </div>
+        <div class="navbar__buttons">
+          <button class="navbar__button">Login</button>
+          <button class="navbar__button">Create account</button>
+        </div>
+      </div>
+
+      <img
+        id="navbar__toggler"
+        class="navbar__toggler"
+        src="/assets/img/hamburger menu.svg"
+        alt=""
+      />
+    </div>
+  </div>
+</nav>
+
+    <!--    header    -->
+    <main class="about">
+      <div class="container">
+        <div class="about__wrap">
+          <h1 class="about__title">
+            With CashMore, everyone's a winner whether they opt for referral or
+            non-referral
+          </h1>
+          <p class="about__desc">
+            CashMore is a profit-sharing multi-level networking and a
+            value-added service business of CapitalSage Limited. We offer a
+            robust platform to meet all your value-added needs conveniently and
+            also allow you to earn directly from the telecoms and bill payment
+            industry.
+          </p>
+        </div>
+        <div class="about__image__wrap">
+          <img src="/assets/img/about_illus.png" alt="" class="about__image" />
+        </div>
+      </div>
+
+      <section class="excerpt">
+        <div class="container">
+          <h2 class="excerpt__title">CREATING WEALTH FOR EVERYONE</h2>
+          <p class="excerpt__desc">
+            At CapitalSage, we are inspired by the entrepreneurial and communal
+            spirit of the average Nigerian, that is why we launched Cashmore to
+            provide individuals with the opportunity to collectively build
+            wealth and attain financial freedom at their own pace. You earn a
+            steady source of income directly from the multi-billion-naira
+            telecoms,TV-cable service providers and electricity industry.
+            <br /><br /><br />The figures are astonishing, in a country of over
+            200 million people, imagine the numbers of Nigerians recharging
+            their phone lines, buying data, subscribing to their TV-cable and
+            paying for electricity every second. Every time you buy airtime and
+            data from your bank, they earn a commission from you and from
+            millions of customers that use their services.<br /><br /><br />
+            Cashmore is offering you a rare opportunity to earn that commission
+            on all your transactions and that of your network now and the
+            future.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__news">
+      <h2 class="footer__news__title">
+        Get special offers and <br />
+        updates from Cashmore
+      </h2>
+      <div class="footer__input__group">
+        <input
+          type="text"
+          name="news_letter"
+          id="news_letter"
+          class="footer__input"
+          placeholder="Enter your email address"
+        />
+        <button type="submit" class="footer__input__cta">Subscribe</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer footer__main">
+    <div class="footer__content container">
+      <img src="/assets/img/logo-colored.png" alt="" class="footer__logo" />
+      <div class="footer__socials">
+        <h3>Social Media</h3>
+        <div class="links">
+          <a href="#">
+            <img src="/assets/img/facebook.svg" alt="fb" />
+          </a>
+          <a href="#">
+            <img src="/assets/img/Instagram.svg" alt="fb" />
+          </a>
+          <a href="#">
+            <img src="/assets/img/Linkedin.svg" alt="fb" />
+          </a>
+          <a href="#">
+            <img src="/assets/img/Twitter.svg" alt="fb" />
+          </a>
+        </div>
+      </div>
+      <p class="footer__address">
+        1, Ademiluyi Close, Beside Methodist Church, <br />
+        New Bodija, Ibadan
+      </p>
+      <div class="footer__contact">
+        <a href="mailto:Support@cashmore.ng">Support@cashmore.ng</a> |
+        <a href="tel:07047707440">07047707440</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  $(document).ready(function () {
+    let selectors = document.querySelectorAll('.service__selector');
+    let tabs = document.querySelectorAll('.service__tab');
+    let toggler = document.querySelector('.navbar__toggler');
+    let mobileNav = document.querySelector('.navbar__mobile');
+    let device = navigator.userAgent;
+
+    $('#app-download').click(function () {
+      if (device.match(/Android|Windows/i)) {
+        window.open(
+          'https://play.google.com/store/apps/details?id=com.teqpace.cashmore'
+        );
+      } else if (device.match(/Mac|Safari|iPhone|iPad|AppleWebKit/i)) {
+        window.open('https://apps.apple.com/ng/app/cashmore/id1543887288');
+      }
+    });
+
+    $(toggler).click(function () {
+      $(mobileNav).toggleClass('active');
+    });
+
+    $.each(selectors, function (index, selector) {
+      $(selector).click(function () {
+        let attribute = $(selector).data('for');
+        let activeTabName, targetTab;
+
+        $.each(tabs, function (index, tab) {
+          $(tabs).removeClass('active');
+          if ($(tab).data('name') === attribute) {
+            activeTabName = $(tab).data('name');
+            targetTab = $(`[data-name=${activeTabName}]`);
+          }
+        });
+
+        $(selectors).removeClass('active');
+        $(selector).addClass('active');
+        $(targetTab).addClass('active');
+      });
+    });
+  });
+</script>
+
+  </body>
+</html>

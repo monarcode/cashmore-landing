@@ -1,0 +1,132 @@
+.navbar {
+  height: 120px;
+  width: 100%;
+  display: grid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: #fff;
+
+  &__wrapper {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  &__toggler {
+    display: none;
+  }
+
+  &__desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+
+  &__mobile {
+    display: none;
+  }
+
+  &__logo {
+    width: 150px;
+    height: auto;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    text-decoration: none;
+    margin: 0 1rem;
+    color: var(--dark);
+    font-size: 1.3rem;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__button {
+    padding-block: calc(#{$spacer} * 2);
+    padding-inline: calc(#{$spacer} * 3);
+    border-radius: var(--base);
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+
+    &:nth-of-type(1) {
+      border: 1px solid var(--main);
+      color: var(--main);
+
+      &:hover {
+        background: var(--main);
+        color: #fff;
+        transition: 0.3s ease background;
+      }
+    }
+
+    &:nth-of-type(2) {
+      background: linear-gradient(117.77deg, #ffb280 0%, #ff6600 100%);
+      color: var(--light);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &__toggler {
+      margin-left: auto;
+      display: block;
+      cursor: pointer;
+    }
+
+    &__mobile {
+      display: block;
+      position: fixed;
+      top: 120px;
+      right: -100vw;
+      height: calc(100vh - 120px);
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      background: var(--light);
+      transition: 0.3s ease right;
+
+      &.active {
+        right: 0;
+        transition: 0.3s ease right;
+      }
+
+      .navbar__buttons {
+        align-self: center;
+        margin-top: 2rem;
+      }
+    }
+
+    &__desktop {
+      display: none;
+    }
+
+    &__links {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 0;
+      gap: 2rem;
+      z-index: 20;
+    }
+
+    &__link {
+      padding: 1.6rem;
+      // background: #fff;
+      align-self: stretch;
+      border-radius: 8px;
+    }
+  }
+}
